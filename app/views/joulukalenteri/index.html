@@ -1,0 +1,12 @@
+<div ng-app="joulukalenteriApp">
+    <div ng-controller="IndexCtrl">
+        <div class="topcoat-list__container">
+            <p>This is your Christmas Calender.</p>
+            <ul class="topcoat-list">
+                <li class="topcoat-list__item" hm-tap="open(day.id)" ng-repeat="day in days">
+                {{ day.id }}
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

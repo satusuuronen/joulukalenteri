@@ -1,10 +1,12 @@
 <div ng-app="joulukalenteriApp">
     <div ng-controller="ShowCtrl">
-        <div class="content-padded">
+        <div class="content-padded day-background">
+        </div>
+        <div class="content-padded day-wrapper">
             <h2 ng-show='day.id == 24'>Merry Christmas!</h2>
             <h3 ng-show='day.id != 24'>{{24 - day.id}} days until Christmas</h3>
-            <p>{{day.description}}</p>
-            <a hm-tap="previewImage()"><img style='width: 50px;' ng-src='{{day.image}}'/></a>
+            <p>{{day.description}}</p>  
+            <div class='day-image' hm-tap="previewImage()" ng-style='day.image | backgroundImage'><div>
         </div>
     </div>
 </div>

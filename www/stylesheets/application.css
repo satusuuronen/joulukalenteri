@@ -10,3 +10,39 @@ input {
 .content-padded {
   padding: 10px;
 }
+
+.calender-container {
+    background-image: url("/images/tree.jpg"); 
+    background-size: 100%; 
+    background-position: center; 
+    padding-top: 0.6rem; 
+    padding-bottom: 0.7rem;
+}
+
+.calender-button {
+    margin: 0.5rem;
+    background-color:rgba(255,0,0,0.0); 
+    width: 4rem;
+}
+
+.day-background {
+    position:absolute;height: 100%; 
+    width:100%; 
+    background-image: url("/images/tree.jpg"); 
+    background-size: 100%; 
+    background-position: center; 
+    opacity:0.5; 
+    z-index:0
+}
+
+.day-wrapper {
+    height: 100%;
+}
+
+.day-image {
+    width: 10rem; 
+    height: 10rem; opacity:1; 
+    position:relative; 
+    z-index:1; 
+    margin:auto;       
+} 

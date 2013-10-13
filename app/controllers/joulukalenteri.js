@@ -12,7 +12,7 @@ joulukalenteriApp.controller('IndexCtrl', function ($scope, JoulukalenteriRestan
             var webView = new steroids.views.WebView("/views/joulukalenteri/modalDecember.html?id=" + id);
             steroids.modal.show(webView);
             return;
-        }    
+        }   
         var anim = new steroids.Animation("curlUp");
         var webView = new steroids.views.WebView("/views/joulukalenteri/show.html?id="+id);
         steroids.layers.push({
@@ -70,4 +70,14 @@ joulukalenteriApp.filter('ordinal', function() {
         }
     };
 });
+
+joulukalenteriApp.filter('backgroundImage',
+    function() {
+        return function(image_url) {
+            if (image_url) {     
+                return  { 'background-image': 'url(\'' + image_url + '\')', 'background-size': '100%', 'background-position': 'center'};
+            }
+        };
+    }
+);
 

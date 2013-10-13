@@ -27,10 +27,13 @@ steroids.config.location = "http://localhost/views/joulukalenteri/index.html"
 # steroids.config.tabBar.selectedTabTintColor = "#ffffff"
 
 # -- Navigation Bar --
-steroids.config.navigationBar.tintColor = "#00aeef"
-steroids.config.navigationBar.titleColor = "#ffffff"
-steroids.config.navigationBar.buttonTintColor = "#000000"
-steroids.config.navigationBar.buttonTitleColor = "#ffffff"
+steroids.config.navigationBar.tintColor = "#d8454b"
+steroids.config.navigationBar.titleColor = "#FFFFFF"
+steroids.config.navigationBar.titleShadowColor = "#6e1801"
+
+steroids.config.navigationBar.buttonTintColor = "#FFFFFF"
+steroids.config.navigationBar.buttonTitleColor = "#000000"
+steroids.config.navigationBar.buttonShadowColor = "#FFFFFF"
 
 # -- Android Loading Screen
 steroids.config.loadingScreen.tintColor = "#262626"
